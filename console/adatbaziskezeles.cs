@@ -12,7 +12,7 @@ namespace adatbazisKezeles
     {
         static void Main(string[] args)
         {
-			//mysqlconnector letölteni
+			//mappanév -> NuGet -> MysqlConnector
             //kötelező adatbázisnál - mysqlconnector letöltés
             MySqlConnectionStringBuilder build = new MySqlConnectionStringBuilder {Server = "127.0.0.1", Database = "ingatlan", UserID = "root", Password = "" };  //xamppnál ez a szerver, (ampps-nál a jelszó valszeg mysql)
             MySqlConnection kapcsolat = new MySqlConnection(build.ConnectionString);
